@@ -6,11 +6,11 @@ const ContactForm = () => {
     <Paper
       elevation={3}
       sx={{
-        width: 521,
+        width: 500,
         height: 688,
         position: "absolute",
-        top: 166,
-        left: 1088,
+        top: 100,
+        left: 1000,
         padding: 4,
         display: "flex",
         flexDirection: "column",

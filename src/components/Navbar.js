@@ -22,8 +22,8 @@ const Navbar = () => {
         />
 
         {/* Left-Side Buttons */}
-        <Button size="medium">Discover</Button>
-        <Button 
+        <Button size="medium" color= 'varient '>Discover</Button>
+        <Button  color= 'varient '
           endIcon={<ArrowDropDownIcon />}
         > 
           Explore 

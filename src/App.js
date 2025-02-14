@@ -16,11 +16,13 @@ const App = () => {
       <Navbar />
       <HeroSection />
       <ContactForm />
-      <Container>
+      <Container  >
         <PricingToggle setPlan={setPlan} />
-        <PricingCards plan={plan} sx={{background: '#D9D9D9'}} />
-        <FAQSection />
+        
+        <PricingCards plan={plan} />
+        
       </Container>
+      <FAQSection />
       <Footer />
     </div>
   );
