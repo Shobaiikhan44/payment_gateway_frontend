@@ -1,13 +1,68 @@
 import React from "react";
-import { Box, TextField, Button, Paper } from "@mui/material";
+import { Box, TextField, Button, Paper, Typography } from "@mui/material";
 
 const ContactForm = () => {
   return (
-    <Paper elevation={3} sx={{ padding: 3, width: 300, position: "absolute", right: 20, top: 20 }}>
-      <TextField fullWidth label="Name" margin="dense" />
-      <TextField fullWidth label="Email" margin="dense" />
-      <TextField fullWidth label="Message" margin="dense" multiline rows={3} />
-      <Button variant="contained" color="primary" sx={{ marginTop: 2 }}>Submit</Button>
+    <Paper
+      elevation={3}
+      sx={{
+        width: 521,
+        height: 688,
+        position: "absolute",
+        top: 166,
+        left: 1088,
+        padding: 4,
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center", // Centers content horizontally
+      }}
+    >
+      {/* Centered Contact Us Heading */}
+      <Typography variant="h5" gutterBottom sx={{ textAlign: "center" }}>
+        Contact Us
+      </Typography>
+
+      {/* Form Inputs */}
+      <Box sx={{ width: "100%" }}> {/* Ensures inputs take full width */}
+        <TextField
+          fullWidth
+          label="First Name"
+          margin="dense"
+          sx={{ backgroundColor: "#f5f5f5", borderRadius: 1 }} // Light blank background
+        />
+        <TextField
+          fullWidth
+          label="Last Name"
+          margin="dense"
+          sx={{ backgroundColor: "#f5f5f5", borderRadius: 1 }}
+        />
+        <TextField
+          fullWidth
+          label="Email"
+          margin="dense"
+          sx={{ backgroundColor: "#f5f5f5", borderRadius: 1 }}
+        />
+        <TextField
+          fullWidth
+          label="Phone"
+          margin="dense"
+          sx={{ backgroundColor: "#f5f5f5", borderRadius: 1 }}
+        />
+        <TextField
+          fullWidth
+          label="Message"
+          margin="dense"
+          multiline
+          rows={4}
+          sx={{ backgroundColor: "#f5f5f5", borderRadius: 1 }}
+        />
+
+        {/* Submit Button */}
+        <Button variant="contained" color="success" sx={{ marginTop: 2, width: "100%" }}>
+          Submit
+        </Button>
+      </Box>
     </Paper>
   );
 };

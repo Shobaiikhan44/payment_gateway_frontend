@@ -18,7 +18,7 @@ const App = () => {
       <ContactForm />
       <Container>
         <PricingToggle setPlan={setPlan} />
-        <PricingCards plan={plan} />
+        <PricingCards plan={plan} sx={{background: '#D9D9D9'}} />
         <FAQSection />
       </Container>
       <Footer />
